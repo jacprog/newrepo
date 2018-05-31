@@ -150,3 +150,10 @@
   line-height: 30px;
   padding: 7px 12px;
   height: 44px; }
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 769px) {
+.slicknav_btn {
+  margin: 0 0;
+  }	
+}

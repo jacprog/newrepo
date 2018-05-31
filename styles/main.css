@@ -105,14 +105,14 @@ html {
 		background-color: #eff2f5;  /* to make sides almost black  */
 		color: black; /*90% light blue text link color*/
 		font-weight: bold;
-		z-index: 9999;	
+/* 		z-index: 9999;	 */
 			}
 	
 	#menu ul ul { 
 	display: none;
 	position: absolute;
 	top: 100%;
-	}
+	z-index: 999;		}
 	
 	#menu ul ul li {
 		float: none;
@@ -319,6 +319,11 @@ footer {
 	margin-bottom : 5px;
 	clear: right;
 }
+
+/******************PARALLAX***************************************************************/
+
+
+
 /*********************************************************************************************/
 /* Media Query for tablet view**********RESPONSIVE**********************************/
 /* no Mobile menu, desktop view, switces below*/
@@ -357,7 +362,7 @@ footer {
 	/*reduce size header 300% to 250% */
 	/*stop float to center, remove top padding*/
 	header h2  {
-	font-size: 250%;
+	font-size: 220%;
 	float: left;
 /* 	text-align: center; */
 	padding: 0 0 0 .4em;
@@ -369,7 +374,7 @@ footer {
 		font-family: Impact, "Arial Black", Verdana, Arial, Helvetica, sans-serif; 
 /*Arial Black font not showing on mobile, Added quotes, still not working*/ 
 		color: #800000; /*red almost black*/
-		padding: 1.5em 0 0 .4em;
+		padding: 1.25em 0 0 .4em;
 
 		float: left;
 /* 		clear: left; */
@@ -408,6 +413,10 @@ footer {
         height: 350px;
 /*                    padding-bottom: 50%;     */
         }
+        
+        footer {
+        	font-size: 85%;      
+          }
 			 
 } 	
 

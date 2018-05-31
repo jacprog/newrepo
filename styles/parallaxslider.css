@@ -1,6 +1,8 @@
 #myparallaxslider{ /* CSS for specific carousel container called #myparallaxslider. */
 width:100%;
-height:550px;
+max-height:550px;
+padding-bottom: 60%; 
+overflow-y: scroll !important;
 }
 
 /* ######### Shared CSS for various parts of slider (in the event of multiple sliders) ######### */
@@ -45,9 +47,10 @@ div.parallaxslider div.selectedslide{ /* CSS for currently selected slide */
 
 div.parallaxslider div.slide div.desc{ /* DIV that contains the textual description inside .slide */
 position: absolute;
-color: white;
-padding: 8px;
-text-shadow: 0 -1px 1px #8a8a8a; /* CSS3 text shadow */
+color: #909090;
+padding: 0px;
+/* text-shadow: 0 -1px 1px #8a8a8a;  */
+/* CSS3 text shadow */
 z-index:5;
 pointer-events: none; /* keep this property intact. Disable pointer events on desc divs themselves */
 }
@@ -63,4 +66,27 @@ div.parallaxslider div.selectedslide div.desc{ /* CSS for currently selected sli
 div.parallaxslider div.slide div.desc a{
 color:yellow;
 text-decoration:none;
+}
+
+/* mobile landscape to tablet portrait SWITCH MENU**************************************/
+@media only screen and (max-width: 769px) {
+	
+#myparallaxslider{ /* CSS for specific carousel container called #myparallaxslider. */
+width:100%;
+max-height:550px;
+padding-bottom: 50%; 
+}
+	
+	
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 415px) {
+#myparallaxslider{ /* CSS for specific carousel container called #myparallaxslider. */
+width:100%;
+max-height:550px;
+padding-bottom: 150%; 
+}
+
+	
 }
