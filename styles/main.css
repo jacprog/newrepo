@@ -235,7 +235,7 @@ main {
 	/* the styles for the YouTube Video  to make it responsive Wrapper and Wrapper iframe*/		
 /* same as a youtube video, here the full width */
 /* the wrapper, how the box will suround the form*/	
-	.Wrapperyt1 {
+	.Wrapperyt1L {
 		position: relative;
 		padding-bottom: 56%; 
 		padding-top: 25px;
@@ -245,14 +245,31 @@ main {
 	
 /* the styles for the iframe, position and size of form*/	
 	
-	.Wrapperyt1 iframe {
+	.Wrapperyt1L iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
  		width: 100%;     /*Video 100% of main who is 90% of page */
 		height: 100%;
 	}
+	.Wrapperyt1P {
+		position: relative;
+		padding-bottom: 53%; 
+		padding-top: 25px;
+		margin-bottom: 1%;
+		height: 0;
+	}
 	
+/* the styles for the iframe, position and size of form*/	
+	
+	.Wrapperyt1P iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+ 		width: 100%;     /*Video 100% of main who is 90% of page */
+		height: 100%;
+	}
+
 	/* the styles for the YouTube Video  to make it responsive Wrapper and Wrapper iframe*/		
 /* same as a youtube video, here the full width */
 /* the wrapper, how the box will suround the form*/
