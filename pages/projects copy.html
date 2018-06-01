@@ -3,7 +3,7 @@
 
 	<!--
 	Comments:
-	Portfolio Experiment
+	Portfolio Experiment Projects page
 	Date 5/30/2018
 	Name: Jacques Favre
 	Language HTML 5, CSS 3, jquerry
@@ -16,14 +16,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jacques Favre Portfolio 2018</title>
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="styles/main.css">
+	<title>Jacques Favre Portfolio 2018 Projects</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main.css">
 	<!-- 	3 script for responsive menu Changed http to https to work on gitHub-->
-		<link rel="stylesheet" href="SlickNav/slicknav.css">
+		<link rel="stylesheet" href="../SlickNav/slicknav.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
-	<script src="SlickNav/jquery.slicknav.js"></script>
+	<script src="../SlickNav/jquery.slicknav.js"></script>
 	
 <script>
 	jQuery(document).ready(function($){
@@ -32,12 +32,12 @@
 	</script>	
 <!-- for parralax     -->
 
-<link rel="stylesheet" href="styles/parallaxslider.css">	
+<link rel="stylesheet" href="../styles/parallaxslider.css">	
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-       <script src="js/jquery.velocity.min.js"></script> 
-            <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>   
-                <script src="js/parallaxslider.js" type="text/javascript">
+       <script src="../js/jquery.velocity.min.js"></script> 
+            <script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>   
+                <script src="../js/parallaxslider.js" type="text/javascript">
                 
 /***********************************************
 * Parallax Slider- (c) Dynamic Drive (www.dynamicdrive.com)
@@ -51,10 +51,10 @@
 
 <script type="text/javascript">
       var firstparallaxslider=new parallaxSlider({
-	wrapperid: 'myparallaxslider', //ID of DIV on page to house slider
+	wrapperid: 'myparallaxslider2', //ID of DIV on page to house slider
 	displaymode: {type:'auto', pause:2000, cycles:2, stoponclick:true, pauseonmouseover:true},
 	delaybtwdesc:  500, // delay in milliseconds between the revealing of each description layer inside a slide
-	navbuttons: ['icon/left.png', 'icon/right.png', 'icon/up.png', 'icon/down.png'], // path to nav images
+	navbuttons: ['../icon/left.png', '../icon/right.png', '../icon/up.png', '../icon/down.png'], // path to nav images
 	activeslideclass: 'selectedslide', // CSS class that gets added to currently shown DIV slide
 	orientation: 'h', //Valid values: "h" or "v"
 	persist: false, //remember last viewed slide and recall within same session?
@@ -66,24 +66,25 @@
 
 <body>
 	<header>
-		<h2><a href="index.html" class="current">Portfolio</a></h2>
+		<h2><a href="../index.html" class="current">Portfolio</a></h2>
 		<h3>Jacques Favre</h3>
 		
 		<nav id="mobile_menu"></nav>
 					<nav id="menu">
     			<ul>
-        			<li><a href="index.html" class="current">Home</a></li>
-        			<li><a href="pages/contact.html">About</a></li>
-        			<li><a href="pages/projects.html">Projects</a></li>
+        			<li><a href="../index.html" class="current">Home</a></li>
+        			<li><a href="../pages/contact.html">About</a></li>
+        			<li><a href="../pages/projects.html">Projects</a></li>
           		</ul>
 			</nav>
 	</header>
 
 	<main>
-<div id="black">
-				<div id="myparallaxslider" class="parallaxslider">
+	
+	<div id="black">
+				<div id="myparallaxslider2" class="parallaxslider">
 					<div class="slide">
-						<div class="bgoverlay" data-bgimage="img/draftrain.jpg"></div>
+						<div class="bgoverlay" data-bgimage="../img/draftrain.jpg"></div>
 							<div class="desc">
 								<div style="position:absolute; width: 20em; right: 10px; top:.6em">
 										<h2>We live in a great time!</h2>
@@ -96,7 +97,7 @@
 								</div>
 							</div>
 							<div class="slide">
-								<div class="bgoverlay" data-bgimage="img/jaf.jpg"></div>
+								<div class="bgoverlay" data-bgimage="../img/jaf.jpg"></div>
 									<div class="desc">
 <!-- 									#E2AF16; 	 -->									
 <div style="position:absolute; width:150px; right:20px; top:.6em; line-height:1.5em; background:#E4A030;	 padding:10px; border-radius:7px">And that is the purpose of this custom web site. I have learned along the way just 		like many of the other projects I have been working on.
@@ -108,16 +109,42 @@
 										</div>
 									</div>
 
-									<div class="slide">
-										<div class="bgoverlay" data-bgimage="img/nightsky.jpg"></div>
-											<div class="desc">
-												<div style="position:absolute; top:25%; background:#754B08; font:normal 100% Germand; padding:20px; margin: 0 15%; font-style:italic; border-radius:10px">
-														Never before has information been so accessible.
-														Technology enables everyone to quickly become masters of the topic of their choice.<br>
-														Together we can exchange, imagine and build as never before,
-														Everyone can learn, create, realize and distribute their masterpieces.<br>
-														<h3>Let's go create together!</h3>
-														<p><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments.</p>
+
+
+									
+<div class="slide">
+									
+										<div class="bgoverlay"></div>
+									<div id="oversize">											
+									<div class="desc">
+																						
+											<div style="position:absolute; top:0; background:#eeeeee; font:normal 100% Germand; padding:0px; margin: 0 0; font-style:italic; border-radius:0px">
+												
+	
+														<h1>Clock</h1>
+							<img src="../images/clock.jpg" alt="My First Clock"> 
+				
+    			<p>Today, 3D printing allows everyone to have a fabrication machine at their finger’s tips. The focus here is to build finished mechanical parts, like gears that make it possible to build a mechanical clock. I also found some valuable information on this <a style="color:blue"; href="http://www.abbeyclock.com/index.html" target=" blank">clock repair website. </a></p>		
+	
+		<h1>Videos on YouTube</h1>
+		
+		
+    		<h3>Slow motion escapement</h3>
+    		
+    		<div class="Wrapperyt1">
+    		    		<iframe width="560" height="315" src="https://www.youtube.com/embed/E4yXOdMlwsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			
+			<h3>The full clock</h3>	
+			
+			<div class="Wrapperyt2">	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/UJ9foJkcFww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div>	
+<!-- 			endclock -->
+</div>
+<!-- end style			 -->
+			
+				
 												</div>
 											</div>
 										</div>

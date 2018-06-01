@@ -1,0 +1,90 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+/* border: 10px solid navy; */
+border-bottom-width: 6px;
+width: 100%; /*width of featured content slider*/
+/* height: 250px; */
+padding-bottom: 60%;
+}
+
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+/* padding: 5px; */
+background: white;
+/* width: 390px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */ */
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+.pagination{
+padding: 5px 10px;
+z-index: 9999;	
+	
+/* width: 400px;  */
+/*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+/* text-align: right; */
+/* background-color: navy; */
+}
+
+.pagination a{
+/* font-size: 60%;	 */
+padding: 0 5px;
+text-decoration: none; 
+color: #bbb;
+background: #bbb;  
+border-radius: 50%; 
+z-index: 9999;
+}
+
+.pagination a:hover, .pagination a.selected{
+color: #717171;
+background-color: #717171;
+}
+
+div.ex1 {
+    max-width: 100%;
+       overflow: scroll;
+        height: 570px;
+/*                    padding-bottom: 50%;     */
+        }
+    
+/*      padding-bottom: 70%;  */
+/*     max-height: 700px;  */
+
+/* @media only screen and (max-width: 769px) {
+    .sliderwrapper{
+        width: 90%;
+        
+      }  */
+        
+        
+            div.ex1 {
+    max-width: 100%;
+       overflow: scroll;
+        height: 570px;    
+    
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 415px) {
+    
+    div.ex1 {
+    max-width: 100%;
+       overflow: scroll;
+        height: 350px;
+/*                    padding-bottom: 50%;     */
+        }    
+    
+}

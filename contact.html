@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<!--
+	Comments:
+	Exercise 3 Prototype
+	Date 1/30/2018
+	Name: Jacques Favre
+	Class CGS2829.0M1 Advance Web Site
+	Language HTML 5, CSS 3, jquerry
+	Incude:
+	Slicknav responsive menu, courtesy of MIT http://slicknav.io Copyright (c) 2016 Josh Cope
+	Terms and Privacy, for non comercial use only, courtesy of http://getterms.io/		-->
+	
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Page</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../SlickNav/slicknav.css">
+<!-- 	3 script for responsive menu Changed http to https to work on gitHub-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="../SlickNav/jquery.slicknav.js"></script>
+	<script>
+	$(document).ready(function(){
+	$('#menu').slicknav();
+	});
+	</script>
+
+</head>
+<body>
+	<header>
+		<h2><a href="../index.html" class="current">Print Part Shop</a></h2>
+			<nav id="menu">
+    			<ul>
+        			<li><a href="../index.html" class="current">Home</a></li>
+        			<li><a href="../pages/contact.html">Contact</a></li>
+        			<li><a>Projects</a>
+        				<ul>
+        					<li><a href="../pages/project1.html">Bearing</a></li> 
+        					<li><a href="../pages/project2.html">Clock</a></li>        		
+        				</ul>       	
+        			</li>
+          		</ul>
+			</nav>
+	</header>
+<main>
+
+		
+		<h1>Contact Page</h1>
+		
+
+				
+<!--     			<p>The IT world is a world of option.
+					Because there are many ways to do things and many tools to use, here are a few options.
+					Some might want to copy and paste an email on a laptop and use their online email account.
+					On a mobile device, it is easy to click on a link to open the device mail app and go from there.
+					Other people may want to make a phone call or send a text, so the option is here as well.</p>		 -->
+	
+
+    		<h3 id="contact">Here are are ways to get in touch</h3>
+    	<ul>
+    		<li><div id="nopadding"><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments</div></li>
+   			<li><strong>Call:</strong> 352-208-3526</li>
+   			<li><strong>Use this email:</strong> jacqueshfavre@gmail.com</li>
+   			<li><strong>Or use this contact form:</strong></li>	
+		</ul>
+		
+		<h1>Contact Form</h1>
+<!-- google docs form took some adjusting to get it error free in validator. Done as a youtube video -->
+
+<div class="Wrapper">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCCcPXzWno5lJCrdCTw_7tO_EztVTFjAapI4A-Kg74oPl1tQ/viewform?embedded=true" width="700" height="1250" ></iframe>
+</div>
+
+	</main>
+	<footer>
+	<p>
+	<a href="../pages/termsAndPrivacy.html">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2018	Jacques Favre ajfavre.com</p>
+	</footer>
+</body>
+</html>

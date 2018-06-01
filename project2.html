@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<!--
+	Comments:
+	Exercise 3 Prototype
+	Date 1/30/2018
+	Name: Jacques Favre
+	Class CGS2829.0M1 Advance Web Site
+	Language HTML 5, CSS 3, jquerry
+	Incude:
+	Slicknav responsive menu, courtesy of MIT http://slicknav.io Copyright (c) 2016 Josh Cope
+	Terms and Privacy, for non comercial use only, courtesy of http://getterms.io/		-->
+	
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project 2</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../SlickNav/slicknav.css">
+	<!-- 	3 script for responsive menu Changed http to https to work on gitHub-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="../SlickNav/jquery.slicknav.js"></script>
+	<script>
+	$(document).ready(function(){
+	$('#menu').slicknav();
+	});
+	</script>
+
+</head>
+<body>
+	<header>
+		<h2><a href="../index.html" class="current">Print Part Shop</a></h2>
+			<nav id="menu">
+    			<ul>
+        			<li><a href="../index.html" class="current">Home</a></li>
+        			<li><a href="../pages/contact.html">Contact</a></li>
+        			<li><a>Projects</a>
+        				<ul>
+        					<li><a href="../pages/project1.html">Bearing</a></li> 
+        					<li><a href="../pages/project2.html">Clock</a></li>        		
+        				</ul>       	
+        			</li>
+          		</ul>
+			</nav>
+	</header>
+<main>
+
+		
+		<h1>Clock</h1>
+							<img src="../images/clock.jpg" alt="My First Clock"> 
+				
+    			<p>Today, 3D printing allows everyone to have a fabrication machine at their finger’s tips. The focus here is to build finished mechanical parts, like gears that make it possible to build a mechanical clock. I also found some valuable information on this <a href="http://www.abbeyclock.com/index.html" target=" blank">clock repair website. </a></p>		
+	
+		<h1>Videos on YouTube</h1>
+		
+		
+    		<h3>Slow motion escapement</h3>
+    		
+    		<div class="Wrapperyt1">
+    		    		<iframe width="560" height="315" src="https://www.youtube.com/embed/E4yXOdMlwsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			
+			<h3>The full clock</h3>	
+			
+			<div class="Wrapperyt2">	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/UJ9foJkcFww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div>		
+				
+
+	</main>
+	<footer>
+	<p>
+	<a href="../pages/termsAndPrivacy.html">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2018	Jacques Favre ajfavre.com</p>
+	</footer>
+</body>
+</html>
