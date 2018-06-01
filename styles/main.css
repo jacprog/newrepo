@@ -16,8 +16,11 @@
 	color: #eff2f5;  light blue background****lighter
 	color: #282828;  almost black 
 	color: #400000; red almost black for site header
+	color: #eeeeee  light blue background****even lighter	
 	
-*/
+	
+	
+	*/
 /* reset selector */
 * {
 	margin: 0;
@@ -32,7 +35,7 @@ body {
 /*     width: 99%; */
 	max-width: 960px;
 	margin: 0 auto; 
-	background-color: #eff2f5;  /* to make all light blue #dce2ea = darker  */
+	background-color: #eeeeee;  /* to make all light blue #dce2ea = darker  */
 		
 	}
 
@@ -41,7 +44,7 @@ html {
 	 /* to make all light blue to see width at building  */	 
 	/* 	background-color: #dce2ea;  */
 	 /* to make sides light blue, all same color  when done    */		
-	background-color: #eff2f5;  
+	background-color: #eeeeee;   
 	
 	}
 
@@ -102,7 +105,7 @@ html {
 		text-align: center;
 		padding: 1.1em 0;
 		text-decoration: none;
-		background-color: #eff2f5;  /* to make sides almost black  */
+		background-color: #eeeeee;   /* to make sides almost white */
 		color: black; /*90% light blue text link color*/
 		font-weight: bold;
 /* 		z-index: 9999;	 */
@@ -252,8 +255,29 @@ main {
 	
 	/* the styles for the YouTube Video  to make it responsive Wrapper and Wrapper iframe*/		
 /* same as a youtube video, here the full width */
-/* the wrapper, how the box will suround the form*/	
-	.Wrapperyt2 {
+/* the wrapper, how the box will suround the form*/
+/* landscape orientation*/
+.Wrapperyt2L {
+		position: relative;
+		padding-bottom: 53%; 
+		padding-top: 25px;
+		margin-bottom: 1%;
+		height: 0;
+	}
+	
+/* the styles for the iframe, position and size of form*/	
+	
+	.Wrapperyt2L iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+ 		width: 100%;     /*Video 100% of main who is 90% of page */
+		height: 100%;
+	}
+
+
+/*portrait orientation*/	
+	.Wrapperyt2P {
 		position: relative;
 		padding-bottom: 56%; 
 		padding-top: 25px;
@@ -263,7 +287,7 @@ main {
 	
 /* the styles for the iframe, position and size of form*/	
 	
-	.Wrapperyt2 iframe {
+	.Wrapperyt2P iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -314,7 +338,7 @@ footer p {
 footer {
 
 
-	background-color: #eff2f5;  /* to make sides almost black */
+	background-color: #eeeeee;  /* to make sides almost black */
 	margin-top: 1em;
 	margin-bottom : 5px;
 	clear: right;
@@ -322,7 +346,14 @@ footer {
 
 /******************PARALLAX***************************************************************/
 
+/* Video format selection*/
 
+.Wrapperyt2P{
+	display: none;
+}
+.Wrapperyt1P{
+	display: none;
+}
 
 /*********************************************************************************************/
 /* Media Query for tablet view**********RESPONSIVE**********************************/
@@ -330,6 +361,8 @@ footer {
 .slicknav_menu {
 	display: none;
 }
+
+
 
 /* tablet portrait to standard 960  no change here*/
 @media only screen and (max-width: 959px) {
@@ -417,6 +450,20 @@ footer {
         footer {
         	font-size: 85%;      
           }
-			 
+/* 	clock videos	 */
+		.Wrapperyt2P{
+	display: block;
+}
+		.Wrapperyt2L{
+	display: none;
+}
+.Wrapperyt1P{
+	display: block;
+}
+.Wrapperyt1L{
+	display: none;
+}	 
+
+
 } 	
 
